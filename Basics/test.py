@@ -1,0 +1,11 @@
+n=int(input())
+i=1
+c=1
+while(i<=n):
+    if(c==1):
+        print('1'*(n+1-i))
+        c=0
+    else:
+        print('0'*(n+1-i))
+        c=1
+    print()
