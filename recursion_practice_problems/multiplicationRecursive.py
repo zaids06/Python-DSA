@@ -9,7 +9,7 @@ def Multiplication(m,n):
     if n==1:
         return m
     return m+Multiplication(m,n-1)
-setrecursionlimit(3000)
+setrecursionlimit(10**6)
 m=int(input())
 n=int(input())
 print(Multiplication(m,n))
