@@ -1,5 +1,21 @@
+#operator solution
+# def power(x, n):
+#     return x**n
+
+
+#recursive solution
+# def power(x, n):
+#     if n==0:
+#         return 1
+#     return x*power(x, n-1)
+
+
+#iterative solution
 def power(x, n):
-    return x**n
+    ans=1
+    for i in range(n):
+        ans=ans*x
+    return ans
 
 # Main
 from sys import setrecursionlimit
