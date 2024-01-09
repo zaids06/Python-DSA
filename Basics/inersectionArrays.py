@@ -33,6 +33,7 @@ while t > 0:
     arr1, n = takeInput()
     arr2, m = takeInput()
     intersection(arr1, arr2, n, m)
+
     print()
 
     t -= 1
