@@ -27,6 +27,7 @@ def takeInput():
 
 
 # main
+
 t = int(stdin.readline().strip())
 
 while t > 0:
