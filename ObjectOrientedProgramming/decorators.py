@@ -1,10 +1,19 @@
-class Student:
-    def __init__(self,name,age):
-        self.name = 'Rohan'
-        self.age = 20
+import time
 
-    def print_student_details(self):
-        print(self.name, end= " ")
-        print(self.age)
-s = Student('Parikh',25)
-s.print_student_details()
+def execution_time_check(func):
+    def inner(*args, **kwargs):
+        start_time = time.time()
+        value = func(*args, **kwargs)
+        end_time = time.time()
+        print("Total time is: ", end_time - start_time)
+        return value
+    return inner
+
+@execution_time_check
+def calc(n):
+    tot = 0
+    for i in range(1, n+1):
+        tot = tot + i
+    return tot
+
+print(calc(10000000))
