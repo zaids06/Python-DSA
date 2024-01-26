@@ -27,6 +27,8 @@ def pairSum(arr, n, num):
                 r-=1
         elif arr[l]+arr[r]>num:
             r-=1
+        else:
+            l+=1
     return count
 
 # Your code goes here
