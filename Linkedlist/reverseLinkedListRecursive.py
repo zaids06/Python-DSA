@@ -17,6 +17,7 @@ def reverseLinkedListRec(head) :
     subhead=reverseLinkedListRec(head.next)
     head.next.next=head
 
+
     print(subhead.data)
     return subhead
 
