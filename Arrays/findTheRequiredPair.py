@@ -2,18 +2,23 @@ from sys import stdin
 
 
 def pairSum(arr, n, num):
-    count = 0
     arr.sort()
+    count = 0
     l=0
     r=n-1
     while l<r:
         if arr[l]+arr[r]==num:
-            countl,countr=1,1
-            if arr[l] == arr[l + 1] or arr[r] == arr[r - 1]:
+            if arr[l] == arr[r]:
+                total = (r - l) + 1
+                total *= (total - 1)
+                count = total // 2
+                break
+            elif arr[l] == arr[l + 1] or arr[r] == arr[r - 1]:
+                countl, countr = 1, 1
                 while l<r and arr[l]+arr[r]==num:
                         if arr[l+1]!=arr[l] and arr[r-1]!=arr[r]:
                             l+=1
-                            r-=1
+                            break
                         if arr[l+1]==arr[l]:
                             countl+=1
                             l+=1
@@ -21,10 +26,6 @@ def pairSum(arr, n, num):
                             countr+=1
                             r-=1
                         count = countl * countr
-            else:
-                count+=1
-                l+=1
-                r-=1
         elif arr[l]+arr[r]>num:
             r-=1
         else:
