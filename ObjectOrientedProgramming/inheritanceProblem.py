@@ -8,6 +8,7 @@ class USA():
         print( "Washington, D.C. is the capital of USA")
     def language(self):
         print("English is the primary language of USA.")
+
 n=int(input())
 if (n==1):
     India().capital()
