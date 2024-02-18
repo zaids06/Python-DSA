@@ -19,6 +19,7 @@ def printReverse(head):
     cur = head.next
     prev.next = None
     temp = head
+
     while cur is not None:
         temp = cur.next
         cur.next = prev
