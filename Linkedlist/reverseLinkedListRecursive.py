@@ -10,6 +10,7 @@ class Node:
         self.next = None
 
 
+
 def reverseLinkedListRec(head) :
     if head is None or head.next is None :
         return head
