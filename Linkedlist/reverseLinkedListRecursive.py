@@ -20,6 +20,7 @@ def reverseLinkedListRec(head) :
     return subhead
 
 
+
 # Taking Input Using Fast I/O
 def takeInput():
     head = None
