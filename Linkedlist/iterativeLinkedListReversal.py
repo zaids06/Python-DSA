@@ -43,8 +43,6 @@ def printLinkedList(head):
     print()
 
 
-
-
 def reverse(head):
     if head is None or head.next is None:
         return head
