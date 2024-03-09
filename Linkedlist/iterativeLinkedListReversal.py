@@ -40,10 +40,15 @@ def printLinkedList(head):
         print(head.data, end=" ")
         head = head.next
 
-
     print()
 
 
+
+
+<<<<<<<<< Temporary merge branch 1
+=========
+
+>>>>>>>>> Temporary merge branch 2
 def reverse(head):
     if head is None or head.next is None:
         return head
