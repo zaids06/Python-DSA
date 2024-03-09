@@ -40,6 +40,7 @@ def printLinkedList(head):
         print(head.data, end=" ")
         head = head.next
 
+
     print()
 
 
