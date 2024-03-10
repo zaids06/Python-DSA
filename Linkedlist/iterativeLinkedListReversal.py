@@ -30,9 +30,6 @@ def takeInput():
             tail = newNode
 
         i += 1
-
-
-
     return head
 
 
