@@ -8,18 +8,20 @@ class Node:
         self.data = data
         self.next = None
 
+
 class Stack:
     # Define data members and __init__()
     def __init__(self):
         self.head = None
         self.count=0
     '''----------------- Public Functions of Stack -----------------'''
+
     def getSize(self):
         return self.count
     # Implement the getSize() function
 
     def isEmpty(self):
-        if(self.head==None):
+        if(self.count==0):
             return True
         else:
             return False
@@ -41,6 +43,7 @@ class Stack:
         else:
             ob= self.head
             self.head=self.head.next
+            self.count-=1
             return ob.data
     # Implement the pop() function
 
